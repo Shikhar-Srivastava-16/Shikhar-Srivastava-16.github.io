@@ -1,0 +1,11 @@
+{
+  "name": "resume-website",
+  "version": "1.0.0",
+  "description": "A simple website to display my resume.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

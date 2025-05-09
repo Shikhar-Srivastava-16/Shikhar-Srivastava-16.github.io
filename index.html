@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shikhar Srivastava</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <iframe src="src/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0.5rem 2rem; /* Adjusted for smaller screens */
+        }
+
+        @media (min-width: 768px) {
+            body {
+            margin-left: 10rem;
+            margin-right: 10rem;
+            }
+        }
+    </style>
+    <header>
+        <h1>Shikhar Srivastava</h1>
+        <p>St Andrews, United Kingdom | <a href="mailto:shikhars2006@gmail.com">shikhars2006@gmail.com</a> | <a href="tel:+44-7407-274943">+44 7407 274943</a> | <a href="https://linkedin.com/in/shikhar-srivastava-131a17278/">LinkedIn</a> | <a href="https://github.com/Shikhar-Srivastava-16">GitHub</a></p>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <hr>
+        <ul>
+            <li>
+                <strong>University of St Andrews</strong>, BSc. (Honours) Computer Science (Sept 2023 - June 2027)
+                <ul>
+                    <li>Finishing second year of four in June 2025. On track for 2:1.</li>
+                    <li><strong>Taught Skills:</strong> Computer Architecture, Theory and Implementation of Algorithms, Functional Programming</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <hr>
+        <ul>
+            <li>
+                <strong>VIP: AI for Decision Making</strong>, University of St Andrews (September 2024 - Ongoing)
+                <ul>
+                    <li>Part of the development team for Conjure Oxide tool.</li>
+                    <li>Added system to allow communication between Conjure Oxide and SAT solvers in Rust.</li>
+                    <li>Proposed a divide-and-conquer approach for implementing concurrency in tree transformations.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Project Intern</strong>, Tata Communications Transformation Services (May 2024 - July 2024)
+                <ul>
+                    <li>Migrated from YOLOv3 to transformer architecture for object detection using Hugging Face Library for Python.</li>
+                    <li>Updated previous image detection software to increase speed and accuracy (~65% to ~75%).</li>
+                    <li>Worked on tools for Image Classification using CNNs.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <ul>
+            <li>
+                <strong><a href="https://github.com/Shikhar-Srivastava-16/Conway-GOL.git">Conway's Game of Life</a></strong>
+                <ul>
+                    <li>Developed implementation of Conway's Game of Life as part of a group project.</li>
+                    <li>Tools Used: Java, Java Swing</li>
+                </ul>
+            </li>
+            <li>
+                <strong><a href="https://github.com/Shikhar-Srivastava-16/Gomoku.git">Gomoku</a></strong>
+                <ul>
+                    <li>Developed a keyboard-and-mouse-based implementation of Gomoku in Haskell using Gloss as the graphics engine.</li>
+                    <li>Tools Used: Haskell, Gloss, Cabal, Unix</li>
+                </ul>
+            </li>
+            <li>
+                <strong><a href="https://github.com/Shikhar-Srivastava-16/Enigma.git">Enigma Emulator</a></strong>
+                <ul>
+                    <li>Built a UNIX-compatible emulator for the Enigma machine with direct corollaries for the hardware-based system.</li>
+                    <li>Tools Used: C, Bash</li>
+                </ul>
+            </li>
+            <li>
+                <strong>CAD: Da Vinci's Cryptex</strong>
+                <ul>
+                    <li>Built a 3D model of a physical version of the fictional device known as the <em>Cryptex</em>.</li>
+                    <li>Based on <em>The Da Vinci Code</em> by Dan Brown. The novel describes a design attributed to Leonardo da Vinci.</li>
+                    <li>Tools Used: Sketchup, Fusion360, Orthographic On-paper Sketches</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <hr>
+        <p><strong>Languages and Technologies:</strong> Rust, C, Java, Python, C#, Shell Scripting, Haskell, .NET (prelim), MySQL/SQLite, PyTorch, Fusion 360 (and similar)</p>
+        <p><strong>Soft Skills:</strong> Teamwork and group organization, effective communication strategies, technical skill upgradation, SCRUM</p>
+        <p><strong>Special Interests:</strong> Written and photographic journalism, novelization and writing, wildlife photography, hiking, birding</p>
+    </section>
+
+    <header>
+        <h1>Shikhar Srivastava</h1>
+        <p>St Andrews, United Kingdom | <a href="mailto:shikhars2006@gmail.com">shikhars2006@gmail.com</a> | <a href="tel:+44-7407-274943">+44 7407 274943</a> | <a href="https://linkedin.com/in/shikhar-srivastava-131a17278/">LinkedIn</a> | <a href="https://github.com/Shikhar-Srivastava-16">GitHub</a></p>
+    </header>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <hr>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <img src="assets/cross-section.png" alt="Description of photo 1" style="width: 200px; height: auto;">
+            <img src="assets/fully-aligned-cross.png" alt="Description of photo 2" style="width: 200px; height: auto;">
+            <img src="assets/fully-aligned.png" alt="Description of photo 3" style="width: 200px; height: auto;">
+            <img src="assets/lock-chamber.png" alt="Description of photo 4" style="width: 200px; height: auto;">
+            <img src="assets/lock.png" alt="Description of photo 5" style="width: 200px; height: auto;">
+            <img src="assets/one-locked-cross.png" alt="Description of photo 6" style="width: 200px; height: auto;">
+            <img src="assets/one-locked.png" alt="Description of photo 6" style="width: 200px; height: auto;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shikhar Srivastava. All rights reserved.</p>
+    </footer>
 </body>
-</html> 
+</html>

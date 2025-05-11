@@ -3,14 +3,6 @@
     margin: 5em;
     padding: 0;
 } */
-
-@media (min-width: 768px) {
-    body {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
-
 img {
     border: 0px solid black;
     display: block;
@@ -37,7 +29,38 @@ header {
     padding-bottom: 0.2em;
     text-align: center;
 }
+@media (max-width: 767px) {
+    body {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        zoom: 1;
+    }
 
+    header {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 1em 0;
+    }
+}
 h1 {
     margin: 0;
 }

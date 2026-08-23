@@ -1,0 +1,11 @@
+.hanko {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--color-shu);
+  border-radius: var(--radius-sm);
+  color: var(--color-shu);
+  font-family: var(--font-display);
+  flex-shrink: 0;
+  transform: rotate(-1deg);
+}

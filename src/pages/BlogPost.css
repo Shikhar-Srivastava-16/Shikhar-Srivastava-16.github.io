@@ -1,0 +1,90 @@
+.blog-post__title {
+  font-size: var(--fs-h1);
+  margin-bottom: var(--space-2);
+}
+
+.blog-post__date {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-7);
+}
+
+.blog-post__body {
+  color: var(--color-text);
+  line-height: var(--lh-loose);
+}
+
+.blog-post__body h2 {
+  font-size: var(--fs-h2);
+  margin-top: var(--space-7);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-5);
+}
+
+.blog-post__body h3 { font-size: 1.15rem; margin-top: var(--space-5); }
+
+.blog-post__body p,
+.blog-post__body li { color: var(--color-text-muted); }
+
+.blog-post__body a { color: var(--color-ai); text-decoration: underline; text-underline-offset: 3px; }
+.blog-post__body a:hover { color: var(--color-shu); }
+
+.blog-post__body code {
+  font-family: var(--font-mono);
+  background: var(--color-bg-overlay);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+}
+
+.blog-post__body pre {
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+
+.blog-post__body pre code {
+  background: none;
+  padding: 0;
+}
+
+.blog-post__body blockquote {
+  margin: var(--space-5) 0;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--color-kin);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.blog-post__pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
+.blog-post__pager-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--fs-small);
+  color: var(--color-text-faint);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-fast) var(--ease-standard), color var(--duration-fast) var(--ease-standard);
+}
+
+.blog-post__pager-link strong {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.blog-post__pager-link:hover { background: var(--color-bg-raised); color: var(--color-shu); }
+.blog-post__pager-link--next { text-align: right; align-items: flex-end; }

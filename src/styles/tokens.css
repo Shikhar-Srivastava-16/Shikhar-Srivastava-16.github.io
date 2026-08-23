@@ -1,0 +1,93 @@
+/*
+  ============================================================
+  DESIGN TOKENS — single source of truth
+  ============================================================
+  Every colour, type size, spacing unit and motion timing used
+  anywhere in this site is declared here, once. Components must
+  reference these variables (var(--...)) rather than hard-coding
+  values. To re-theme the whole site, edit only this file.
+
+  Palette reference (traditional Japanese colour names):
+    sumi     — 墨  ink black, the ground the whole page sits on
+    washi    — 和紙 paper white, used sparingly for text/light
+    shu      — 朱  vermillion, the hanko-stamp accent / signature red
+    ai       — 藍  indigo, secondary accent for links & data
+    kin      — 金  muted gold, rare highlight for dividers/quotes
+  ============================================================
+*/
+
+:root {
+  /* ---------- Colour: surfaces ---------- */
+  --color-bg: #121214;            /* sumi — page background */
+  --color-bg-raised: #19191c;     /* card / panel background */
+  --color-bg-overlay: #202024;    /* hovered / nested panels */
+  --color-border: #313136;        /* hairline rules & card borders */
+  --color-border-strong: #45454b;
+
+  /* ---------- Colour: text ---------- */
+  --color-text: #ece7de;          /* washi — primary text */
+  --color-text-muted: #a3a09a;    /* secondary text, captions */
+  --color-text-faint: #6f6d68;    /* timestamps, fine print */
+
+  /* ---------- Colour: accents ---------- */
+  --color-shu: #c1440e;           /* vermillion — signature accent */
+  --color-shu-soft: #7a3117;      /* muted vermillion for borders/hover fills */
+  --color-shu-tint: rgba(193, 68, 14, 0.12);
+  --color-ai: #4c6b8a;            /* indigo — secondary accent, links */
+  --color-ai-soft: #2c3d4e;
+  --color-kin: #b4924c;           /* muted gold — rare highlight */
+
+  /* ---------- Typography ---------- */
+  --font-display: "Shippori Mincho", "Noto Serif JP", "Iowan Old Style", Georgia, serif;
+  --font-body: "Zen Kaku Gothic New", "Inter", -apple-system, "Hiragino Sans", sans-serif;
+  --font-mono: "JetBrains Mono", "Noto Sans Mono", ui-monospace, monospace;
+
+  --fs-hero: clamp(2.8rem, 6vw, 5.4rem);
+  --fs-h1: clamp(2.1rem, 3.6vw, 3.2rem);
+  --fs-h2: clamp(1.5rem, 2.4vw, 2rem);
+  --fs-h3: 1.2rem;
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+  --fs-eyebrow: 0.75rem;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-loose: 1.85;
+
+  --tracking-wide: 0.14em;
+  --tracking-wider: 0.28em;
+
+  /* ---------- Spacing scale ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* ---------- Layout ---------- */
+  --content-max: 1120px;
+  --content-narrow: 720px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-standard: 320ms;
+  --duration-slow: 600ms;
+
+  /* ---------- Elevation ---------- */
+  --shadow-card: 0 1px 0 var(--color-border), 0 12px 32px -20px rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-standard: 0ms;
+    --duration-slow: 0ms;
+  }
+}

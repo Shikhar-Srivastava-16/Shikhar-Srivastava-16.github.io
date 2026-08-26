@@ -89,10 +89,6 @@
   left: 0;
 }
 
-.nav__resume {
-  white-space: nowrap;
-}
-
 @media (max-width: 860px) {
   .nav__inner { flex-wrap: wrap; height: auto; padding-top: var(--space-3); padding-bottom: var(--space-3); gap: var(--space-3); }
   .nav__links { order: 3; width: 100%; justify-content: space-between; gap: var(--space-3); }

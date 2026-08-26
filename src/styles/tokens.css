@@ -30,8 +30,8 @@
   --color-text-faint: #6f6d68;    /* timestamps, fine print */
 
   /* ---------- Colour: accents ---------- */
-  --color-shu: #c1440e;           /* vermillion — signature accent */
-  --color-shu-soft: #7a3117;      /* muted vermillion for borders/hover fills */
+  --color-shu: #7c6dfa;           /* vermillion — signature accent */
+  --color-shu-soft: rgba(124, 109, 250, 0.15);      /* muted vermillion for borders/hover fills */
   --color-shu-tint: rgba(193, 68, 14, 0.12);
   --color-ai: #4c6b8a;            /* indigo — secondary accent, links */
   --color-ai-soft: #2c3d4e;

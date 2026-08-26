@@ -1,12 +1,12 @@
 export const site = {
     name: "Shikhar Srivastava",
-    initial: "印",
+    initial: "",
     displayJapanese: false,
     role: "Computer Science Student",
     resumeHref: "/resume.pdf",
-    email: "hello@example.com",
+    email: "shikhars2006@gmail.com",
     socials: [
-        { label: "GitHub", href: "https://github.com/" },
+        { label: "GitHub", href: "https://github.com/Shikhar-Srivastava-16" },
         { label: "LinkedIn", href: "https://linkedin.com/" },
     ],
 };

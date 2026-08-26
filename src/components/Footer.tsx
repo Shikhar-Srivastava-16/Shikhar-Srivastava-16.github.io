@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <span className="footer__mark" aria-hidden="true">{site.initial}</span>
         <p className="footer__text">
-          © {new Date().getFullYear()} {site.name}. Built with React &amp; TypeScript.
+          © {new Date().getFullYear()} {site.name}.
         </p>
         <div className="footer__socials">
           {site.socials.map((s) => (

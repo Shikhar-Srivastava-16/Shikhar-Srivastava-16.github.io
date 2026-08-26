@@ -22,7 +22,7 @@ export default function Home() {
                             {site.name}
                         </h1>
                         <p className="hero__lede">
-                            I am a British-Indian MSci Computer Science student at the University of St Andrews. During my
+                            I am a British-Indian M.Sci (hons) Computer Science student at the University of St Andrews. During my
                             Masters, I have researched several kinds of new technologies, often on the bleeding
                             edge of computing and software. I have a special interest in the application of new
                             computing research in the field.
@@ -51,7 +51,7 @@ export default function Home() {
                                 <span className="section-nav__jp" aria-hidden="true">{site.displayJapanese ? item.jp : ""}</span>
                                 <span className="section-nav__label">{item.label}</span>
                                 <span className="section-nav__teaser">{teasers[item.to]}</span>
-                                <span className="section-nav__arrow" aria-hidden="true">→</span>
+                                <span className="section-nav__arrow" aria-hidden="true">OωO</span>
                             </Link>
                         ))}
                     </div>

@@ -9,7 +9,11 @@ export default function NavBar() {
             <div className="nav__inner container">
 
 
-                <NavLink to="/" className={({ isActive }) => "nav__brand" + (isActive ? " nav__brand--active" : "")} aria-label={`${site.name} — home`}>
+                <NavLink 
+                    to="/"
+                    className={({ isActive }) => "nav__brand" + (isActive ? " nav__brand--active" : "")} 
+                    aria-label={`${site.name} — home`}
+                >
 
                     <HankoStamp glyph={site.initial} size={30} />
                     <span className="nav__brand-text">{site.name}</span>
@@ -28,8 +32,8 @@ export default function NavBar() {
                     ))}
                 </nav>
 
-                <a className="button nav__resume" href={site.resumeHref} target="_blank" rel="noreferrer">
-                    Résumé
+                <a className="button button--filled" href={site.resumeHref} target="_blank" rel="noreferrer">
+                    My Résumé
                 </a>
             </div>
         </header>

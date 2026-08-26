@@ -124,6 +124,7 @@ ul, ol { padding-left: 1.2em; color: var(--color-text-muted); }
 .button--filled {
   background: var(--color-shu);
   border-color: var(--color-shu);
+  font-weight: 450;
   color: var(--color-bg);
 }
 

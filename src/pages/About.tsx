@@ -7,9 +7,7 @@ export default function About() {
                 <span className="eyebrow">About</span>
                 <h1 className="section-title">Hi, I'm Shikhar!</h1>
                 <p className="about__lede">
-                    This page is intentionally bare for now — a placeholder while the
-                    rest of the site takes shape. A short bio, a photo, and a few
-                    highlights will live here.
+                    Under Construction
                 </p>
                 <hr className="divider" />
                 <p>

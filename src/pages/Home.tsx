@@ -5,9 +5,9 @@ import "./Home.css";
 const teasers: Record<string, string> = {
     "/about": "What am I like? And what do I do?",
     "/projects": "My OS, my games, my tools and everything else I've worked on",
-    "`photography": "See the things I wish I could see every day.",
+    "/photography": "See the things I wish I could see every day.",
     "/cad": "",
-    "/blog": "Read about what I think about, and what my life is like!",
+    "/blog": "Get to know what I think about, and what my life is like!",
 };
 
 export default function Home() {
@@ -22,15 +22,15 @@ export default function Home() {
                             {site.name}
                         </h1>
                         <p className="hero__lede">
-                            I am a British-Indian M.Sci (hons) Computer Science student at the University of St Andrews. During my
+                            I am an M.Sci (hons) Computer Science student at the University of St Andrews. During my
                             Masters, I have researched several kinds of new technologies, often on the bleeding
                             edge of computing and software. I have a special interest in the application of new
                             computing research in the field.
                             As such, I have worked on research projects that use VR, Functional Programming, 3D designs, and AI,
                             and in software projects where I have applied new technology to cutting-edge platforms.
-
+                            <br/>
                             In my free time, I sing, I dance, and I travel the world and capture it through a camera lens.
-
+                            <br/>
                             Read all about my exploits in my Blog, whether you want an insight into my technical tomfoolery,
                             or if you want to learn about what makes my life interesting.
                         </p>
@@ -48,10 +48,10 @@ export default function Home() {
                     <div className="section-nav__grid">
                         {navItems.map((item) => (
                             <Link key={item.to} to={item.to} className="section-nav__card card">
-                                <span className="section-nav__jp" aria-hidden="true">{site.displayJapanese ? item.jp : ""}</span>
+                                <span className="section-nav__jp" aria-hidden="true">{site.displayJapanese ? item.hi : ""}</span>
                                 <span className="section-nav__label">{item.label}</span>
                                 <span className="section-nav__teaser">{teasers[item.to]}</span>
-                                <span className="section-nav__arrow" aria-hidden="true">OωO</span>
+                                <span className="section-nav__arrow" aria-hidden="true"></span>
                             </Link>
                         ))}
                     </div>

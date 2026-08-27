@@ -14,7 +14,7 @@
 
 .footer__mark {
   color: var(--color-shu);
-  font-family: var(--font-display);
+  font-family: var(--font-hindi);
 }
 
 .footer__text { margin: 0; color: var(--color-text-faint); }

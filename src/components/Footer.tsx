@@ -15,7 +15,7 @@ export default function Footer() {
               {s.label}
             </a>
           ))}
-          <a href={`mailto:${site.email}`}>{site.email}</a>
+          {/* <a href={`mailto:${site.email}`}>{site.email}</a> */}
         </div>
       </div>
     </footer>

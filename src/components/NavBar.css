@@ -17,13 +17,12 @@
 .nav__brand {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-5);
   margin-right: auto;
 }
 
 .nav__brand--active {
   color: var(--color-text);
-  text-decoration: underline;
 }
 
 .nav__brand-text {
@@ -31,6 +30,25 @@
   font-size: 1.1rem;
   letter-spacing: 0.02em;
 }
+
+.nav__brand-text::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-shu);
+  transition: width var(--duration-standard) var(--ease-standard), left var(--duration-standard) var(--ease-standard);
+}
+
+/* .nav__link--active::after {
+  width: 100%;
+  left: 0;
+} */
+
+
+
 
 .nav__links {
   display: flex;
@@ -52,9 +70,9 @@
 }
 
 .nav__link-jp {
-  writing-mode: vertical-rl;
-  font-family: var(--font-display);
-  font-size: 0.68rem;
+  font-family: var(--font-hindi);
+  font-weight: 100;
+  font-size: 0.9rem;
   color: var(--color-shu);
   opacity: 0;
   height: 0;

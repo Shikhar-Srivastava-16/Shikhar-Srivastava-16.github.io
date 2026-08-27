@@ -13,7 +13,7 @@
 
 .hero__vertical {
   writing-mode: vertical-rl;
-  font-family: var(--font-display);
+  font-family: var(--font-hindi);
   font-size: 1.4rem;
   letter-spacing: 0.5em;
   color: var(--color-shu-soft);
@@ -69,7 +69,7 @@
 }
 
 .section-nav__jp {
-  font-family: var(--font-display);
+  font-family: var(--font-hindi);
   color: var(--color-shu);
   font-size: 1.1rem;
   margin-bottom: var(--space-2);
@@ -96,6 +96,10 @@
 
 .section-nav__card:hover .section-nav__arrow {
   transform: translateX(4px);
+  color: var(--color-shu);
+}
+
+.section-nav__card:hover .section-nav__teaser {
   color: var(--color-shu);
 }
 

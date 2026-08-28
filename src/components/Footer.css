@@ -2,7 +2,14 @@
   background: var(--color-bg-raised);
   border-top: 1px solid var(--color-border);
   padding: var(--space-6) 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
+
+
 
 .footer__inner {
   display: flex;
@@ -10,7 +17,7 @@
   gap: var(--space-4);
   flex-wrap: wrap;
   color: var(--color-text-faint);
-  font-size: var(--fs-small);
+  font-size: var(--fs-body);
 }
 
 .footer__mark {
@@ -26,12 +33,19 @@
   gap: var(--space-4);
 }
 
-.footer__socials a {
+.a {
   color: var(--color-text-muted);
   transition: color var(--duration-fast) var(--ease-standard);
 }
 
-.footer__socials a:hover { color: var(--color-shu); }
+.icon {
+  font-family: var(--font-mono);
+  font-size: calc(1.5 * var(--fs-body));
+  position: relative;
+  top: 10%;
+}
+
+a:hover { color: var(--color-shu); }
 
 @media (max-width: 600px) {
   .footer__socials { margin-left: 0; }

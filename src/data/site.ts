@@ -5,9 +5,9 @@ export const site = {
     role: "Computer Science Student",
     resumeHref: "/resume.pdf",
     socials: [
-        { label: "GitHub", href: "https://github.com/Shikhar-Srivastava-16" },
-        { label: "LinkedIn", href: "https://linkedin.com/" },
-        { label: "shikhars2006@gmail.com", href: "mailto:shikhars2006@gmail.com" },
+        { icon: "󰊤", label: "GitHub", href: "https://github.com/Shikhar-Srivastava-16" },
+        { icon: "󰌻", label: "LinkedIn", href: "https://linkedin.com/" },
+        { icon: "󰊫", label: "shikhars2006@gmail.com", href: "mailto:shikhars2006@gmail.com" },
     ],
 };
 

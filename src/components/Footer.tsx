@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer__socials">
           {site.socials.map((s) => (
             <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
-              {s.label}
+              <a className="icon">{s.icon }</a> {s.label}
             </a>
           ))}
           {/* <a href={`mailto:${site.email}`}>{site.email}</a> */}

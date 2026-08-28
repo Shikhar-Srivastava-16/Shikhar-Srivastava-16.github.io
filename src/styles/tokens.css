@@ -43,7 +43,7 @@
   /* fonts */
   --font-display: "Shippori Mincho", "Noto Serif hi", "Iowan Old Style", Georgia, serif;
   --font-body: "Zen Kaku Gothic New", "Inter", -apple-system, "Hiragino Sans", sans-serif;
-  --font-mono: "JetBrains Mono", "Noto Sans Mono", ui-monospace, monospace;
+  --font-mono: "JetBrainsMono Nerd Font", "Noto Sans Mono", ui-monospace, monospace;
   --font-hindi: "Sarpanch", sans-serif;
 
   --fs-hero: clamp(2.8rem, 6vw, 5.4rem);

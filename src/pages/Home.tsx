@@ -5,8 +5,8 @@ import "./Home.css";
 const teasers: Record<string, string> = {
     "/about": "What am I like? And what do I do?",
     "/projects": "My OS, my games, my tools and everything else I've worked on",
-    "/photography": "See the things I wish I could see every day.",
-    "/cad": "",
+    "/photography": "See the things I want to see every time I close my eyes. ",
+    "/cad": "Learn about the things I've brought from Abbot's Flatland into our world",
     "/blog": "Get to know what I think about, and what my life is like!",
 };
 
@@ -15,7 +15,6 @@ export default function Home() {
         <>
             <section className="hero">
                 <div className="container hero__inner">
-                    {/* <div className="hero__vertical" aria-hidden="true">創る</div> */}
                     <div className="hero__content">
                         <span className="eyebrow">{site.role}</span>
                         <h1 className="hero__title">
@@ -23,11 +22,9 @@ export default function Home() {
                         </h1>
                         <p className="hero__lede">
                             I am an M.Sci (hons) Computer Science student at the University of St Andrews. During my
-                            Masters, I have researched several kinds of new technologies, often on the bleeding
-                            edge of computing and software. I have a special interest in the application of new
-                            computing research in the field.
-                            As such, I have worked on research projects that use VR, Functional Programming, 3D designs, and AI,
-                            and in software projects where I have applied new technology to cutting-edge platforms.
+                            Masters, I have researched several kinds of bleeding-edge computing and software. 
+                            I have a special interest in the application of new computing research in the field.
+                            My practical experience includes projects that use VR, Functional Programming, CAD, and AI,
                             <br/>
                             In my free time, I sing, I dance, and I travel the world and capture it through a camera lens.
                             <br/>
@@ -39,24 +36,24 @@ export default function Home() {
                             <Link className="button" to="/blog">My Blog: Read about What I do</Link>
                         </div>
                     </div>
+                        <section className="section-nav">
+                            <div className="container">
+                                {/* <hr className="divider" /> */}
+                                <div className="section-nav__grid">
+                                    {navItems.map((item) => (
+                                        <Link key={item.to} to={item.to} className="section-nav__card card">
+                                            <span className="section-nav__hi" aria-hidden="true">{site.displayhindi ? item.hi : ""}</span>
+                                            <span className="section-nav__label">{item.label}</span>
+                                            <span className="section-nav__teaser">{teasers[item.to]}</span>
+                                            <span className="section-nav__arrow" aria-hidden="true"></span>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        </section>
                 </div>
             </section>
 
-            <section className="section-nav">
-                <div className="container">
-                    <hr className="divider" />
-                    <div className="section-nav__grid">
-                        {navItems.map((item) => (
-                            <Link key={item.to} to={item.to} className="section-nav__card card">
-                                <span className="section-nav__hi" aria-hidden="true">{site.displayhindi ? item.hi : ""}</span>
-                                <span className="section-nav__label">{item.label}</span>
-                                <span className="section-nav__teaser">{teasers[item.to]}</span>
-                                <span className="section-nav__arrow" aria-hidden="true"></span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
         </>
     );
 }

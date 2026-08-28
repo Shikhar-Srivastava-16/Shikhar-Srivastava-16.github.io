@@ -23,6 +23,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  src: url('fonts/0xProtoNerdFontMono-Italic.ttf') format('truetype');  
+}
+
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 600;

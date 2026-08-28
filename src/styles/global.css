@@ -4,11 +4,13 @@
 html, body, #root { height: 100%; }
 
 html {
-  background: var(--color-bg);
   color-scheme: dark;
+  overscroll-behavior: none;
+  height: 100%;
 }
 
 body {
+  overscroll-behavior: none;
   margin: 0;
   background: var(--color-bg);
   background-image:

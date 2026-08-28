@@ -6,13 +6,12 @@ export default function Projects() {
     <section className="page projects">
       <div className="container">
         <span className="eyebrow">Projects</span>
-        <h1 className="section-title">Selected work</h1>
+        <h1 className="section-title">Some of my Projects...</h1>
         <p className="projects__lede">
-          A handful of builds worth writing up — mechanical, embedded, and
-          somewhere in between.
+          
         </p>
 
-        <div className="projects__list">
+        {/* <div className="projects__list">
           {projects.map((project, i) => (
             <article className="project-panel card" key={project.slug}>
               <div className="project-panel__media">
@@ -32,7 +31,7 @@ export default function Projects() {
               </div>
             </article>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

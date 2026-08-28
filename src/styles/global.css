@@ -79,14 +79,14 @@ ul, ol { padding-left: 1.2em; color: var(--color-text-muted); }
   margin-bottom: var(--space-4);
 }
 
-.eyebrow::before {
+/* .eyebrow::before {
   content: "";
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: var(--color-shu);
   display: inline-block;
-}
+} */
 
 .section-title {
   font-size: var(--fs-h1);

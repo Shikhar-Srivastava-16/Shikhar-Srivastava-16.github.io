@@ -7,15 +7,13 @@ export default function Blog() {
     <section className="page blog">
       <div className="container">
         <span className="eyebrow">Blog</span>
-        <h1 className="section-title">Notes, by category</h1>
+        <h1 className="section-title">A look inside my train of thought</h1>
         <p className="blog__lede">
-          Posts are pulled straight from a <code>/blog</code> folder — each
-          subdirectory is a category, each file inside it a post, read here
-          in the order it was written.
+          
         </p>
 
         {blogCategories.length === 0 && (
-          <p className="blog__empty">No posts yet — add markdown files under <code>/blog/&lt;category&gt;/</code>.</p>
+          <p className="blog__empty">No posts yet - Under Construction.</p>
         )}
 
         <div className="blog-categories">

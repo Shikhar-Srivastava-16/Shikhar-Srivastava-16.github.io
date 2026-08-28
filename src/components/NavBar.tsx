@@ -32,7 +32,7 @@ export default function NavBar() {
                 </nav>
 
                 <a className="button button--filled" href={site.resumeHref} target="_blank" rel="noreferrer">
-                    My Résumé
+                    Résumé
                 </a>
             </div>
         </header>

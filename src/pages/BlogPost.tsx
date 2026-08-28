@@ -14,7 +14,7 @@ export default function BlogPost() {
         <div className="container container--narrow">
           <span className="eyebrow">Blog</span>
           <h1 className="section-title">Post not found</h1>
-          <Link className="button" to="/blog">← Back to blog</Link>
+          <Link className="button" to="/blog">Back to blog</Link>
         </div>
       </section>
     );

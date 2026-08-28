@@ -8,10 +8,9 @@ export default function Cad() {
     <section className="page cad">
       <div className="container">
         <span className="eyebrow">3D Design &amp; CAD</span>
-        <h1 className="section-title">Parts &amp; assemblies</h1>
+        <h1 className="section-title">My work in 3D</h1>
         <p className="cad__lede">
-          A running log of mechanical design work — organised the same way as
-          the previous version of this site, by discipline.
+          Under Construction
         </p>
 
         {categories.map((category) => {

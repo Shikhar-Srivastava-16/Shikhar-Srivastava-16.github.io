@@ -16,7 +16,7 @@ export const navItems = [
     { label: "About", to: "/about", hi: "परिचय" },
     { label: "Projects", to: "/projects", hi: "रचनाएं" },
     { label: "Photography", to: "/photography", hi: "तस्वीर-कला" },
-    { label: "3D & CAD", to: "/cad", hi: "३-डी और सी. ए. डी" },
+    { label: "3D & CAD", to: "/cad", hi: "सी.ए.डी." },
     { label: "Blog", to: "/blog", hi: "ब्लॉग" },
 ] as const;
  

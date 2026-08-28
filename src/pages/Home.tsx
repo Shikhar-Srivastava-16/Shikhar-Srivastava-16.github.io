@@ -15,7 +15,7 @@ export default function Home() {
         <>
             <section className="hero">
                 <div className="container hero__inner">
-                    <div className="hero__vertical" aria-hidden="true">創る</div>
+                    {/* <div className="hero__vertical" aria-hidden="true">創る</div> */}
                     <div className="hero__content">
                         <span className="eyebrow">{site.role}</span>
                         <h1 className="hero__title">

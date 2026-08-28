@@ -5,7 +5,7 @@ type HankoStampProps = {
 };
 
 /**
- * The site's signature mark: a hanko (Japanese name-seal) rendered in the
+ * The site's signature mark: a hanko (hindi name-seal) rendered in the
  * vermillion accent. Used as the wordmark in the nav and as a recurring
  * motif on section dividers.
  */

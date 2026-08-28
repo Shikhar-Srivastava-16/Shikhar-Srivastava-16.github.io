@@ -25,7 +25,7 @@ export default function NavBar() {
                             to={item.to}
                             className={({ isActive }) => "nav__link" + (isActive ? " nav__link--active" : "")}
                         >
-                            <span className="nav__link-jp" aria-hidden="true">{site.displayJapanese ? item.hi : ""}</span>
+                            <span className="nav__link-hi" aria-hidden="true">{site.displayhindi ? item.hi : ""}</span>
                             <span className="nav__link-en">{item.label}</span>
                         </NavLink>
                     ))}

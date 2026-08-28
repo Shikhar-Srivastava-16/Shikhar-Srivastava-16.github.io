@@ -1,44 +1,47 @@
 /*
-  ============================================================
-  DESIGN TOKENS — single source of truth
-  ============================================================
-  Every colour, type size, spacing unit and motion timing used
-  anywhere in this site is declared here, once. Components must
-  reference these variables (var(--...)) rather than hard-coding
-  values. To re-theme the whole site, edit only this file.
+  DESIGN TOKENS
+
+  Every colour, type size, spacing unit and motion timing used anywhere in this site is declared here to ensure unified design language.
 
   Palette reference (traditional Japanese colour names):
-    sumi     — 墨  ink black, the ground the whole page sits on
-    washi    — 和紙 paper white, used sparingly for text/light
-    shu      — 朱  vermillion, the hanko-stamp accent / signature red
-    ai       — 藍  indigo, secondary accent for links & data
-    kin      — 金  muted gold, rare highlight for dividers/quotes
+    sumi     — ink black, the ground the whole page sits on
+    washi    — paper white, used sparingly for text/light
+    shu      — vermillion, the hanko-stamp accent / signature red
+    ai       — indigo, secondary accent for links & data
+    kin      — muted gold, rare highlight for dividers/quotes
   ============================================================
 */
 
+/* colours are decided in the following way:
+ - C1: purple
+      shades of purple are used in the every context, including highlights, buttons, links, background, highlights
+ - C2: slate
+      shades of slate and gray are used to point out important things like cards
+ - C3: 
+*/
+
 :root {
-  /* ---------- Colour: surfaces ---------- */
-  --color-bg: #121214;            /* sumi — page background */
+  /* surface colours */
+  --color-bg: #0c0718;            /* page background */
   --color-bg-raised: #19191c;     /* card / panel background */
   --color-bg-overlay: #202024;    /* hovered / nested panels */
   --color-border: #313136;        /* hairline rules & card borders */
   --color-border-strong: #45454b;
 
-  /* ---------- Colour: text ---------- */
-  --color-text: #ece7de;          /* washi — primary text */
+  /* text colours */
+  --color-text: rgb(234, 225, 249);          /* primary text */
   --color-text-muted: #a3a09a;    /* secondary text, captions */
   --color-text-faint: #6f6d68;    /* timestamps, fine print */
 
-  /* ---------- Colour: accents ---------- */
-  --color-shu: #7c6dfa;           /* vermillion — signature accent */
-  --color-shu-soft: rgba(124, 109, 250, 0.15);      /* muted vermillion for borders/hover fills */
-  --color-shu-tint: rgba(193, 68, 14, 0.12);
-  --color-ai: #4c6b8a;            /* indigo — secondary accent, links */
-  --color-ai-soft: #2c3d4e;
-  --color-kin: #b4924c;           /* muted gold — rare highlight */
+  /* accent colours */
+  --color-shu: rgb(98, 19, 245);           /* accent */
+  --color-shu-soft: rgba(98, 19, 245, 0.15);      /* muted accent for borders/hover fills */
+  --color-ai: #ff3bf5;            /* secondary accent, links */
+  --color-ai-soft: #9c6899;       /* muted secondary accent, links */
+  --color-kin: #b4924c;           /* highlight */
 
-  /* ---------- Typography ---------- */
-  --font-display: "Shippori Mincho", "Noto Serif JP", "Iowan Old Style", Georgia, serif;
+  /* fonts */
+  --font-display: "Shippori Mincho", "Noto Serif hi", "Iowan Old Style", Georgia, serif;
   --font-body: "Zen Kaku Gothic New", "Inter", -apple-system, "Hiragino Sans", sans-serif;
   --font-mono: "JetBrains Mono", "Noto Sans Mono", ui-monospace, monospace;
   --font-hindi: "Sarpanch", sans-serif;
@@ -58,7 +61,7 @@
   --tracking-wide: 0.14em;
   --tracking-wider: 0.28em;
 
-  /* ---------- Spacing scale ---------- */
+  /* Spacing scale */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -69,19 +72,19 @@
   --space-8: 4.5rem;
   --space-9: 7rem;
 
-  /* ---------- Layout ---------- */
+  /* Layout */
   --content-max: 1120px;
   --content-narrow: 720px;
   --radius-sm: 2px;
   --radius-md: 4px;
 
-  /* ---------- Motion ---------- */
+  /* Motion */
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-fast: 150ms;
   --duration-standard: 320ms;
   --duration-slow: 600ms;
 
-  /* ---------- Elevation ---------- */
+  /* Elevation */
   --shadow-card: 0 1px 0 var(--color-border), 0 12px 32px -20px rgba(0, 0, 0, 0.7);
 }
 

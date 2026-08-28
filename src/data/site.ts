@@ -1,7 +1,7 @@
 export const site = {
     name: "Shikhar Srivastava",
     initial: "शि.श्री.",
-    displayJapanese: true,
+    displayhindi: true,
     role: "Computer Science Student",
     resumeHref: "/resume.pdf",
     socials: [

@@ -48,7 +48,7 @@ export default function Home() {
                     <div className="section-nav__grid">
                         {navItems.map((item) => (
                             <Link key={item.to} to={item.to} className="section-nav__card card">
-                                <span className="section-nav__jp" aria-hidden="true">{site.displayJapanese ? item.hi : ""}</span>
+                                <span className="section-nav__hi" aria-hidden="true">{site.displayhindi ? item.hi : ""}</span>
                                 <span className="section-nav__label">{item.label}</span>
                                 <span className="section-nav__teaser">{teasers[item.to]}</span>
                                 <span className="section-nav__arrow" aria-hidden="true"></span>

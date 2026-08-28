@@ -10,7 +10,7 @@ type HankoStampProps = {
  * motif on section dividers.
  */
 // FIXME: switch this out
-export default function HankoStamp({ glyph = "印", size = 34, display = true }: HankoStampProps) {
+export default function HankoStamp({ glyph = "印", display = true }: HankoStampProps) {
   return (
     <span
       className="hanko"

@@ -76,6 +76,7 @@
   color: var(--color-shu);
   opacity: 0;
   height: 0;
+  margin-bottom: 5px;
   overflow: hidden;
   transition: opacity var(--duration-fast) var(--ease-standard), height var(--duration-fast) var(--ease-standard);
 }

@@ -30,7 +30,6 @@
           vscode
           (python3.withPackages (ps: with ps; [ 
             # python dependencies
-            pytest 
             numpy
           ]))
           ruff

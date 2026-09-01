@@ -13,6 +13,7 @@ mixed-radix counter). More/larger values -> more points -> denser curve.
 """
 
 import matplotlib.pyplot as plt
+import json
 
 
 def change_parities(p, start):
@@ -47,19 +48,21 @@ def number_pts(r, start, inc):
 def draw(segments, xmin, xmax, ymin, ymax, filename="murray_polygon.png"):
     """Stand-in for the S-algol draw(screen, picture, xmin, xmax, ymin, ymax)."""
     fig, ax = plt.subplots()
+    # colour = '#13072c'    -- lightest
+    # colour = '#100626'  -- darker-1
+    colour = '#110726'  # -- darker-2
+    # colour = '#0f0621'  -- too dark
     for (sx, sy), (ex, ey) in segments:
-        ax.plot([sx, ex], [sy, ey], color="black", linewidth=0.8)
-    ax.set_xlim(xmin, xmax)
-    ax.set_ylim(ymin, ymax)
+        ax.plot([sx, ex], [sy, ey], color=colour, linewidth=5)
+
     ax.set_aspect("equal")
     ax.axis("off")
-    fig.savefig(filename, dpi=200, bbox_inches="tight")
+    json.dump(segments, open("segments.json", "w"))
+    fig.savefig(filename, dpi=500, bbox_inches="tight", transparent='true')
     print(f"Saved plot to {filename}")
-    try:
-        plt.show()
-    except Exception:
-        pass  # no display available (e.g. headless environment) - PNG is already saved
 
+
+# polygon(0.00% 45.00%, 20.00% 0.00%, 100.00% 30.00%, ...)
 
 def main(x_vals, y_vals):
     x_rad, y_rad = len(x_vals), len(y_vals)
@@ -105,11 +108,14 @@ def main(x_vals, y_vals):
         else:
             y1 = y2
 
-    draw(segments, -0.15 * width, 0.85 * width, 0, width)
+    draw(segments, -0.15 * width, 0.85 * width, 0, width, '../public/murray.png')
 
 
 if __name__ == "__main__":
     # Hardcoded radices -- edit these to change the curve.
-    X_RADICES = [3,7]
-    Y_RADICES = [3,7]
+
+    
+    # current standard: [3,9], [3,9]
+    X_RADICES = [3,9]
+    Y_RADICES = [3,9]
     main(X_RADICES, Y_RADICES)

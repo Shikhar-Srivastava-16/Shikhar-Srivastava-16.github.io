@@ -24,7 +24,7 @@ export default function Home() {
                             I am an M.Sci (hons) Computer Science student at the University of St Andrews. During my
                             Masters, I have researched several kinds of bleeding-edge computing and software. 
                             I have a special interest in the application of new computing research in the field.
-                            My practical experience includes projects that use VR, Functional Programming, CAD, and AI,
+                            My practical experience includes projects that use VR, Functional Programming, CAD, and Aritifical Intelligence.
                             <br/>
                             In my free time, I sing, I dance, and I travel the world and capture it through a camera lens.
                             <br/>

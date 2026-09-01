@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import "./Projects.css";
+import Badge from "../components/Badge";
 
 export default function Projects() {
   return (
@@ -11,16 +12,17 @@ export default function Projects() {
           
         </p>
 
-        {/* <div className="projects__list">
+        <div className="projects__list">
           {projects.map((project, i) => (
             <article className="project-panel card" key={project.slug}>
               <div className="project-panel__media">
                 <img src={project.image} alt={project.name} loading="lazy" />
               </div>
               <div className="project-panel__body">
-                <span className="project-panel__index" aria-hidden="true">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+                <div className="project-panel__index" aria-hidden="true">
+                  {String(i + 1).padStart(2, "0")} 
+                  <Badge status={project.status}/>
+                </div>
                 <h2 className="project-panel__name">{project.name}</h2>
                 <p className="project-panel__desc">{project.description}</p>
                 <ul className="project-panel__tags">
@@ -31,7 +33,7 @@ export default function Projects() {
               </div>
             </article>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );

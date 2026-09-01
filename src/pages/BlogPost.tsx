@@ -25,8 +25,8 @@ export default function BlogPost() {
   return (
     <article className="page blog-post">
       <div className="container container--narrow">
-        <Link className="breadcrumb" to={`/blog/${post.categorySlug}`}>← {post.categoryName}</Link>
-        <span className="eyebrow">{post.categoryName}</span>
+        <Link className="breadcrumb" to={`/blog/${post.categorySlug}`}>Back to {post.categoryName}</Link>
+        {/* <span className="eyebrow">{post.categoryName}</span> */}
         <h1 className="blog-post__title">{post.title}</h1>
         <time className="blog-post__date" dateTime={post.date}>
           {new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}

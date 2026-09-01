@@ -12,7 +12,7 @@ export default function BlogCategory() {
         <div className="container container--narrow">
           <span className="eyebrow">Blog</span>
           <h1 className="section-title">Category not found</h1>
-          <Link className="button" to="/blog">← Back to all categories</Link>
+          <Link className="button" to="/blog">Back to all categories</Link>
         </div>
       </section>
     );
@@ -21,8 +21,8 @@ export default function BlogCategory() {
   return (
     <section className="page blog-category-page">
       <div className="container container--narrow">
-        <Link className="breadcrumb" to="/blog">← All categories</Link>
-        <span className="eyebrow">Category</span>
+        <Link className="breadcrumb" to="/blog">Back to all categories</Link>
+        {/* <span className="eyebrow">Category</span> */}
         <h1 className="section-title">{category.name}</h1>
         {category.description && <p className="blog-category-page__desc">{category.description}</p>}
 

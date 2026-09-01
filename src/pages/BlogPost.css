@@ -26,7 +26,7 @@
 .blog-post__body h3 { font-size: 1.15rem; margin-top: var(--space-5); }
 
 .blog-post__body p,
-.blog-post__body li { color: var(--color-text-muted); }
+.blog-post__body li { color: var(--color-text); }
 
 .blog-post__body a { color: var(--color-ai); text-decoration: underline; text-underline-offset: 3px; }
 .blog-post__body a:hover { color: var(--color-shu); }

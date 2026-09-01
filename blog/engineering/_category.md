@@ -1,4 +1,0 @@
----
-name: Engineering
-description: Placeholder
----

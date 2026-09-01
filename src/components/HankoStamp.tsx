@@ -4,11 +4,6 @@ type HankoStampProps = {
   display?: boolean;
 };
 
-/**
- * The site's signature mark: a hanko (hindi name-seal) rendered in the
- * vermillion accent. Used as the wordmark in the nav and as a recurring
- * motif on section dividers.
- */
 // FIXME: switch this out
 export default function HankoStamp({ glyph = "印", display = true }: HankoStampProps) {
   return (

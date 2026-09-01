@@ -43,7 +43,6 @@
 
 .project-panel__body {
   padding: var(--space-6);
-  display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
@@ -53,6 +52,10 @@
   color: var(--color-shu);
   font-size: var(--fs-small);
   letter-spacing: var(--tracking-wide);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* needs a defined width/flex-basis to have room to spread */
 }
 
 .project-panel__name {

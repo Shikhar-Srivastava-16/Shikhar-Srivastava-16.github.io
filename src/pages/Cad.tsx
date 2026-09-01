@@ -1,7 +1,7 @@
-import { cadProjects } from "../data/cad";
+import { cadProjects, categories } from "../data/cad";
 import "./Cad.css";
 
-const categories = ["Mechanical", "Product", "Structural"] as const;
+// const categories = ["Mechanical", "Product", "Structural"] as const;
 
 export default function Cad() {
   return (

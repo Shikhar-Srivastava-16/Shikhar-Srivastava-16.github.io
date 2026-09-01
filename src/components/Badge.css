@@ -1,0 +1,10 @@
+.badge {
+  font-family: var(--font-body);
+  letter-spacing: 0.12em;
+  padding: var(--space-1);
+  border-radius: 1px;
+  background: var(--status-tag-acc);
+  color: var(--status-tag);
+  border: 1px solid var(--status-tag);
+  text-transform: uppercase;
+}

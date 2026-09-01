@@ -36,7 +36,11 @@ h1, h2, h3, h4 {
   color: var(--color-text);
 }
 
-p { margin: 0 0 var(--space-4); color: var(--color-text-muted); }
+p { 
+  margin: 0 0 var(--space-4); 
+  color: var(--color-text-muted); 
+  text-wrap: pretty;
+}
 
 a {
   color: inherit;
@@ -79,7 +83,7 @@ ul, ol { padding-left: 1.2em; color: var(--color-text-muted); }
   align-items: center;
   gap: var(--space-2);
   font-family: var(--font-body);
-  font-size: var(--fs-eyebrow);
+  font-size: var(--fs-h3);
   letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
   color: var(--color-shu);
@@ -117,7 +121,7 @@ ul, ol { padding-left: 1.2em; color: var(--color-text-muted); }
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-sm);
   color: var(--color-text);
-  background: transparent;
+  background: var(--color-bg);
   transition: border-color var(--duration-fast) var(--ease-standard),
               color var(--duration-fast) var(--ease-standard),
               background var(--duration-fast) var(--ease-standard);
@@ -131,14 +135,16 @@ ul, ol { padding-left: 1.2em; color: var(--color-text-muted); }
 .button--filled {
   background: var(--color-shu);
   border-color: var(--color-shu);
-  font-weight: 450;
+  font-weight: 500;
   color: var(--color-bg);
 }
 
 .button--filled:hover {
-  background: transparent;
+  background: var(--color-bg);
   color: var(--color-shu);
 }
+
+
 
 .card {
   background: var(--color-bg-raised);

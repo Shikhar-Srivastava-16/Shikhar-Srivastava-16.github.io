@@ -1,8 +1,7 @@
 import { Link, useParams } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { getAdjacentPosts, getPost } from "../lib/blog";
 import "./BlogPost.css";
+import {MarkdownRenderer} from "../components/MarkdownRenderer.tsx";
 
 export default function BlogPost() {
   const { categorySlug = "", postSlug = "" } = useParams();
@@ -33,7 +32,8 @@ export default function BlogPost() {
         </time>
 
         <div className="blog-post__body">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+          <MarkdownRenderer markdownText={post.content}/>
+          {/* <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown> */}
         </div>
 
         <nav className="blog-post__pager" aria-label="More in this category">

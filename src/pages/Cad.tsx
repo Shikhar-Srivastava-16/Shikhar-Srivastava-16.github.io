@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { cadProjects, categories } from "../data/cad";
 import "./Cad.css";
 

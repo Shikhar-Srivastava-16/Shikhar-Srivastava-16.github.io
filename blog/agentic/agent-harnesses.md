@@ -1,11 +1,11 @@
 ---
-title: Building Agent Harnesses in Rust
+title: The Need for Updating our Agent Infrastucture
 date: 2026-07-10
-summary: Writing a crate to Build Agent Harnesses in Rust: The Good, The Bad, and The Absolutely Nonsensical
-tags: Rust, AI Agents, work-in-progress
+summary: Working out the problems with out current infrastructure for tyhe development of agent harnesses
+tags: AI Agents, Agent Harnesses, Agentic AI
 ---
 
-## Why?
+## The Need for A New Way
 
 If you've ever worked with Agentic AI or written Agent Harnesses, you would know that there are only a handful of possibilities to consider when choosing the platform that you use to build your tool. While I was interning at a Deep Tech and AI team, the most popular choice by far was a libary called LangChain and its family of other infrastructure libraries. This is what tools like OpenCode and OpenClaw use to accomplish the real 'Agent' behaviour which makes up the bulk of the runtime when you as a user provide directions to an AI tool.
 
@@ -28,3 +28,9 @@ Luckily, the fix for this is relatively simple. Let us look at our problems and 
  3. **Polymorphism is Slow**: Shared behaviour is necessary for something like an Agent, especially when we start getting into orchestration (using multiple LLMs at the same time). It makes life significantly easier for the developers. Python, an object-oriented language, handles this through Inheritance and Polymorphism. The problem is, even languages like Java have the same problems because polymorphism (usually) is accomplished at runtime. To remedy this, we would have to pick to a language that doesn't have the same shortcomings.
 
 So, we need to switch to a language that is *compiled*, *strongly typed* and *monomorphic*. That last factor is imporant - all languages can enforce monomorphism through convention, but that reintroduces one of the python problems. Therefore, we need a language that *enforces* monomorphism. As you may have guessed, there is an production-ready language that fulfills all of these criteria, along with a few other useful characteristics that can be useful, which I will talk about in subsequent posts. 
+
+## Rust-eze: The one stop shop to making your life complicated
+
+All of the problems that we have discussed so far are easy to solve using Rust. It is compiled and highly optimised, which goes a long way towards dealing with our speed issue. It also comes with the added benefit of a more efficient memory system. It also gives us the usual upsides of type safety, memory safety and thread safety. Each of those will be helpful when we think about introducing security measures, or when we try to speed things up using parallelism. However, there are a few more features of the language which are far more consequential to this choice: Rust's type system, and its Monomophism. Read the next blogpost to find out why Rust is optimal for these tasks, and how I was able to use the unique capabilities of the language to solve a lot of the problems that I have talked about in this blogpost.
+
+TL;DR: Rust has a lot of very useful features that allow for the development of a library that offers substantial improvements in speed, efficiecy and ease-of-use. 

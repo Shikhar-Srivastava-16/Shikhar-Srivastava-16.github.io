@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { navItems, site } from "../data/site";
 import "./Home.css";
+import Footer from "../components/Footer";
 
 const teasers: Record<string, string> = {
     "/about": "What am I like? And what do I do?",
@@ -53,7 +54,6 @@ export default function Home() {
                         </section>
                 </div>
             </section>
-
         </>
     );
 }

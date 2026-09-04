@@ -45,6 +45,13 @@
 .about__box {
   flex: 1;
   min-width: 200px;
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
 
 .about__box h3 {
@@ -52,19 +59,22 @@
   text-transform: uppercase;
   letter-spacing: var(--tracking-wide);
   color: var(--color-shu);
-  margin-bottom: var(--space-3);
+  margin: 0;
 }
 
 .about__box ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex: 1;
 }
 
 .about__box li {
   margin-bottom: var(--space-1);
   padding-left: var(--space-2);
   position: relative;
+  font-size: var(--fs-body);
+  color: var(--color-text);
 }
 
 .about__box li::before {
@@ -74,7 +84,30 @@
   color: var(--color-shu);
 }
 
-.about__box--github .button {
-  width: 100%;
+.about__box--github {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.about__box--github .button {
+  width: auto;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-shu);
+  color: var(--color-bg);
+  border-color: var(--color-shu);
+}
+
+.about__box--github .button:hover {
+  background: var(--color-bg);
+  color: var(--color-shu);
+  border-color: var(--color-bg);
+}
+
+.about__box--github .github-logo {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: var(--fs-body);
+  margin-right: var(--space-2);
+  color: var(--color-bg);
 }

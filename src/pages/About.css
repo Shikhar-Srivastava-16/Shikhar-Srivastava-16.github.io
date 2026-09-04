@@ -91,23 +91,14 @@
   justify-content: center;
 }
 
-.about__box--github .button {
-  width: auto;
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-shu);
-  color: var(--color-bg);
-  border-color: var(--color-shu);
-}
-
-.about__box--github .button:hover {
-  background: var(--color-bg);
-  color: var(--color-shu);
-  border-color: var(--color-bg);
-}
-
 .about__box--github .github-logo {
   font-family: "JetBrainsMono Nerd Font", sans-serif;
-  font-size: var(--fs-body);
-  margin-right: var(--space-2);
-  color: var(--color-bg);
+  font-size: var(--fs-large);
+  color: var(--color-text-muted);
+  line-height: 0.6;
+  overflow: hidden;
+}
+
+.about__box--github .github-logo:hover {
+  color: var(--color-shu);
 }

@@ -48,14 +48,13 @@ export default function About() {
                     </div>
 
                     <div className="about__box about__box--github">
-                        <span className="github-logo"></span>
                         <a
-                            className="button button--filled"
+                            className="github-logo"
                             href="https://github.com/Shikhar-Srivastava-16"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            GitHub
+                            
                         </a>
                     </div>
                 </div>

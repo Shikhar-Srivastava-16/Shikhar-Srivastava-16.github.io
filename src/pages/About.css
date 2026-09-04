@@ -2,3 +2,79 @@
   font-size: 1.05rem;
   color: var(--color-text-muted);
 }
+
+.about__hero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.about__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about__bio {
+  max-width: calc(100% - 260px);
+}
+
+.about__role {
+  font-size: var(--fs-h3);
+  color: var(--color-shu);
+  margin-bottom: var(--space-2);
+}
+
+.about__personal {
+  font-size: var(--fs-body);
+  color: var(--color-text-muted);
+  line-height: var(--lh-normal);
+  margin-top: var(--space-2);
+}
+
+.about__boxes {
+  display: flex;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.about__box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.about__box h3 {
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-shu);
+  margin-bottom: var(--space-3);
+}
+
+.about__box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about__box li {
+  margin-bottom: var(--space-1);
+  padding-left: var(--space-2);
+  position: relative;
+}
+
+.about__box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-shu);
+}
+
+.about__box--github .button {
+  width: 100%;
+  justify-content: center;
+}

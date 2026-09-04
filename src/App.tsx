@@ -27,7 +27,6 @@ export default function App() {
                     <Route path="/blog/:categorySlug/:postSlug" element={<Page inner={BlogPost} />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-                <Routes>...</Routes>
             {/* </main> */}
         </div>
     );

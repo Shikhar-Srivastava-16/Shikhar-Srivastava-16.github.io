@@ -1,18 +1,20 @@
 ---
 title: Choice of Language: How to Leverage Rust
 date: 2026-07-12
-summary: Understanding which features of rust make it ideal for this type of task, and why it allows us to solve problems that the prvious entry introduceWriting a crate to Build Agent Harnesses in Rust: The Good, The Bad, and The Absolutely Nonsensicald
+summary: Understanding the features of Rust which make it ideal for this type of task, and why it allows us to solve problems that the previous entry introduced.
 summary: Writing a crate to Build Agent Harnesses in Rust: The Good, The Bad, and The Absolutely Nonsensical
 tags: Rust, Type Systems, Framework development
 ---
 
 ## What Rust Has to Offer
 
+In the previous post, I talked about a number of problems with our current agent infrastructure, and about fixing those problems by switching to new languages. In this post, I will talk in more detail about the specific technical capabilities of the language. In so doing, I hope to provide a working understanding of how the compiler works. More importantly, I want to demonstrate that developing an understanding of the compiler and of the language's structure can help with understanding how to design frameworks. 
+
 ### Structured Datatypes
 
-Let us first explore the type system. The compiler enforces absolute type safety. This means that there is no 'any' type, no implicit coercion and no possibility of type errors at runtime. It also distinguishes considers mutable and immutable objects different types. In order to achieve this, all objects, parameters, functions and even shared behaviour is heavily type-annotated. This means that developers get to dictate the flow of control at the code level. Further, there is also a distinction made between static and dynamic types. The former is always resolved at compile time, while the latter requires checking at runtime. This uber-strong type system means that, at the expense of some fairly complex syntax, rust programs are written in such a way that allows the compiler to pretty much fully resolve the flow of control with very few exceptions (known as dynamic code).
+Let us first explore the type system. The compiler enforces absolute type safety. This means that there is no 'any' type, no implicit coercion and no possibility of type errors at runtime. It also distinguishes considers mutable and immutable objects different types. In order to achieve this, all objects, parameters, functions and even shared behaviour is heavily type-annotated. This means that developers get to dictate the flow of control at the code level. Further, there is also a distinction made between static and dynamic types. The former is always resolved at compile time, while the latter requires checking at runtime. This extremely strong\ type system means that, at the expense of some fairly complex syntax, rust programs are written in such a way that allows the compiler to pretty much fully resolve the flow of control with very few exceptions (known as dynamic code).
 
-The simplest advantage that we can leverage is to turn semi-structured JSON into structured data. This is accomplished by defining a fully qualified type that can represent the format of the API request and which is structrally identical to the data which the LLM's RESTful API endpoint expects to see. This resolves a significant disparity in the request process - the JSON request is semi-structured despite trying to access an endpoint whose input type is structured and therefore more rigid. This internal datatype within the Rust code allows us to ensure that the data is also structured within the code. The only time a 'request' is semi-structured is in flight, where we don't have to worry about it. 
+The simplest advantage that we can leverage is to turn semi-structured JSON into structured data. This is accomplished by defining a fully qualified type that can represent the format of the API request and which is structurally identical to the data which the LLM's RESTful API endpoint expects to see. This resolves a significant disparity in the request process - the JSON request is semi-structured despite trying to access an endpoint whose input type is structured and therefore more rigid. This internal datatype within the Rust code allows us to ensure that the data is also structured within the code. The only time a 'request' is semi-structured is in flight, where we don't have to worry about it. 
 
 ### Rust's conversion and coercion systems. 
 
@@ -28,14 +30,14 @@ struct Number {
 
 fn main() {
     let int = 5;
-    // print is a function that takes something, converts it into a number, and prints it out
+    // print is a function that takes something, converts it into a Number type, and prints it out
     // `into` converts between types without having to make different functions for each input/output type combination
     print(num.into());
 }
 
 ```
 
-However, this is not because the underlying process is the same as implicit coercion, but because the compiler is able to accoplish conversions beween  (think of this as shorthand in syntax which gets removed in pre-processing). All type conversions will use the same pattern during the build step. It uses the following underlying infrastructure, without which the `.into()` function throws a complication error:
+However, this is not because the underlying process is the same as implicit coercion, but because the compiler is able to accomplish conversions between  (think of this as shorthand in syntax which gets removed in pre-processing). All type conversions will use the same pattern during the build step. It uses the following underlying infrastructure, without which the `.into()` function throws a complication error:
 
 
 ```rust
@@ -79,3 +81,9 @@ Rust implements shared behaviour using Traits and Generics, all of which have li
 Put together, this means that any time you define shared behaviour in rust, you can define it to depend on other behaviours - which means that the compiler can *also* distinguish between variables on the basis of the functionality which they implement. Further down the line, this allows the compiler to completely resolve shared behaviour during compilation.
 
 Languages like Java and Python have polymorphism as well. When a polymorphic method or function is called, the runtime finds the right method and then calls it via a process known as *Method Resolution*. Instead of this, Rust resolves a single polymorphic flow of control in code to being a whole bunch of monomorphic flows of control. It then rewrites the function calls to use the correct monomorphic flow of control. In cases where dynamic polymorphism (à la method resolution) is absolutely necessary, we can use the `dyn` keyword, which tells the compiler to make an exception in monomorphic resolution.
+
+## Conclusion
+
+As I have demonstrated in this blog post, there are several features in rust that make it fundamentally different from other production-ready languages. There are a number of features within the design of the language that allow far more compile-time optimisation that in languages such as C or C++. In the next post, I shall discuss how I used these features to design a **strictly synchronous** framework for building agent harnesses while preserving all of the useful features that I have explained theoretically in this blog post. 
+
+I shall also discuss the practical side of using these features during development in a way that allows people to work with a codebase that uses these features without needing to understand the calculus behind it. 

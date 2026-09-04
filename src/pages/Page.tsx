@@ -11,14 +11,11 @@ export default function Page({ inner: Inner, display = true }: PageContent) {
   return (
     <div className="page">
     <main className="main">
-      <span
-      //   className="hanko"
-        aria-hidden="true"
-      >
+      {/* <span aria-hidden="true"> */}
         {display && <Inner />}
-      </span>    
+      {/* </span>     */}
     </main>
-      <Footer/>
+    <Footer/>
     </div>
   );
 }

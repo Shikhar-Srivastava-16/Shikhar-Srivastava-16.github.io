@@ -39,13 +39,13 @@ export default function BlogPost() {
         <nav className="blog-post__pager" aria-label="More in this category">
           {prev ? (
             <Link to={prev.path} className="blog-post__pager-link blog-post__pager-link--prev">
-              <span>← Previous</span>
+              <span>Previous Post</span>
               <strong>{prev.title}</strong>
             </Link>
           ) : <span />}
           {next ? (
             <Link to={next.path} className="blog-post__pager-link blog-post__pager-link--next">
-              <span>Next →</span>
+              <span>Next Post</span>
               <strong>{next.title}</strong>
             </Link>
           ) : <span />}

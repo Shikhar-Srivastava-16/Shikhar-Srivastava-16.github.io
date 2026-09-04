@@ -49,7 +49,9 @@
   display: inline-block;
 }
 
-.post-timeline__title:hover { color: var(--color-shu); }
+.post-timeline__title:hover {
+  color: var(--color-shu);
+}
 
 .post-timeline__meta {
   font-family: var(--font-mono);

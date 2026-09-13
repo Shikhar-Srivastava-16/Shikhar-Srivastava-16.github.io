@@ -15,9 +15,6 @@ export default function Projects() {
         <div className="projects__list">
           {projects.map((project, i) => (
             <article className="project-panel card" key={project.slug}>
-              <div className="project-panel__media">
-                <img src={project.image} alt={project.name} loading="lazy" />
-              </div>
               <div className="project-panel__body">
                 <div className="project-panel__index" aria-hidden="true">
                   {String(i + 1).padStart(2, "0")} 

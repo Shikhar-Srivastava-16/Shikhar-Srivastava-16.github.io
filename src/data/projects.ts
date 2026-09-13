@@ -4,7 +4,7 @@ export type Project = {
   slug: string;
   name: string;
   description: string;
-  image: string;
+  image?: string; // not rendered by Projects page (masonry tiles are text-only)
   tags: string[];
   gitlink: string;
   status: ProjectStatusValue; 

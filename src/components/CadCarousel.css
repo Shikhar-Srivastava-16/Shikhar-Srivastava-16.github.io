@@ -35,12 +35,12 @@
   top: 50%;
   transform: translateY(-50%);
   width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  border: 1px solid var(--color-border-strong);
-  background: color-mix(in srgb, var(--color-bg-raised) 80%, transparent);
-  color: var(--color-text);
-  font-size: 1.25rem;
+  height: 3rem;
+  border-radius: 0;
+  border: 1px solid var(--color-shu);
+  background: var(--color-shu);
+  color: var(--color-bg);
+  font-size: 1.6rem;
   line-height: 1;
   cursor: pointer;
   display: flex;
@@ -49,6 +49,11 @@
   padding: 0;
   opacity: 0;
   transition: opacity 0.15s ease;
+}
+
+.embla__button:hover {
+  background: var(--color-bg);
+  color: var(--color-shu);
 }
 
 .embla:hover .embla__button,
@@ -82,7 +87,7 @@
 .embla__dot {
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 50%;
+  border-radius: 0;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -90,5 +95,5 @@
 }
 
 .embla__dot.is-active {
-  background: var(--color-text);
+  background: var(--color-shu);
 }

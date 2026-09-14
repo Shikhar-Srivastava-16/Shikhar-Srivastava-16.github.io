@@ -35,5 +35,23 @@ export const cadProjects: CadProject[] = [
     ],
     link: ["Published by The Griffith Institute", "https://tutankhamun.griffith.ox.ac.uk/stories/re-creating-tutankhamuns-mask-3d-harry-burtons-photographs-digital-model"],
     category: "Research",
+  },
+
+  {
+    slug: "da-vinci-lock",
+    name: "Cryptex, from The Da Vinci Code",
+    tool: "Fusion360 and AutoCAD",
+    description:
+      "Lifelike model of the Cryptex, as described in Dan Brown's The Da Vinci Code.",
+    images: [
+      "/images/cad/cross-section.png",
+      "/images/cad/fully-aligned.png",
+      "/images/cad/fully-aligned-cross.png",
+      "/images/cad/lock-chamber.png",
+      "/images/cad/lock.png",
+      "/images/cad/one-locked-cross.png",
+      "/images/cad/one-locked.png",
+    ],
+    category: "Research",
   }
 ];

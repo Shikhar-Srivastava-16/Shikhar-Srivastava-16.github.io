@@ -23,7 +23,6 @@
 .cad-grid {
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   gap: var(--space-5);
 }
 

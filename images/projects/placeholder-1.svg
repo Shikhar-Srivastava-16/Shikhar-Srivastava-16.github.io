@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#19191c"/>
+  <rect x="0.5" y="0.5" width="799" height="599" fill="none" stroke="#313136"/>
+  <line x1="0" y1="0" x2="800" y2="600" stroke="#242428" stroke-width="1"/>
+  <line x1="800" y1="0" x2="0" y2="600" stroke="#242428" stroke-width="1"/>
+  <circle cx="400" cy="270" r="46" fill="none" stroke="#c1440e" stroke-width="2"/>
+  <text x="400" y="360" font-family="Georgia, serif" font-size="20" fill="#a3a09a" text-anchor="middle">Autonomous Delivery Cart</text>
+</svg>

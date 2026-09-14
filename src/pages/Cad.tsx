@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
 import { cadProjects, categories } from "../data/cad";
+import CadCarousel from "../components/CadCarousel";
 import "./Cad.css";
 
 // const categories = ["Mechanical", "Product", "Structural"] as const;
@@ -24,12 +24,22 @@ export default function Cad() {
                 {items.map((project) => (
                   <article className="cad-card card" key={project.slug}>
                     <div className="cad-card__media">
-                      <img src={project.image} alt={project.name} loading="lazy" />
+                      <CadCarousel images={project.images} name={project.name} />
                     </div>
                     <div className="cad-card__body">
                       <h3 className="cad-card__name">{project.name}</h3>
                       <span className="cad-card__tool">{project.tool}</span>
                       <p className="cad-card__desc">{project.description}</p>
+                      {project.link && (
+                        <a
+                          className="button button--filled cad-card__link"
+                          href={project.link[1]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {project.link[0]}
+                        </a>
+                      )}
                     </div>
                   </article>
                 ))}

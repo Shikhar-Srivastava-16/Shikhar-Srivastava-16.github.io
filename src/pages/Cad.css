@@ -35,12 +35,8 @@
 .cad-card__media {
   background: var(--color-bg-overlay);
   aspect-ratio: 4 / 3;
-}
-
-.cad-card__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .cad-card__body {
@@ -68,4 +64,10 @@
   color: var(--color-text-muted);
   font-size: var(--fs-small);
   line-height: var(--lh-loose);
+}
+
+.cad-card__link {
+  align-self: flex-start;
+  margin-top: var(--space-3);
+  text-decoration: none;
 }

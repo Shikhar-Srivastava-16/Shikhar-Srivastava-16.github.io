@@ -6,7 +6,7 @@ export type CadProject = {
   name: string;
   tool: string;
   description: string;
-  image: string;
+  images: string[];
   link?: [string, string];
   category: Category;
 };
@@ -18,7 +18,11 @@ export const cadProjects: CadProject[] = [
     tool: "Blender",
     description:
       "High-Fidelity model of King Tut's Death Mask, made using the photogrammetry process on archival materials. Project conducted by the University of St Andrews in collaboration with The Griffith Institute.",
-    image: "/images/cad/placeholder-1.svg",
+    images: [
+      "/images/cad/placeholder-1.svg",
+      "/images/cad/placeholder-2.svg",
+      "/images/cad/placeholder-3.svg",
+    ],
     link: ["Published by The Griffith Institute", "https://tutankhamun.griffith.ox.ac.uk/stories/re-creating-tutankhamuns-mask-3d-harry-burtons-photographs-digital-model"],
     category: "Research",
   }

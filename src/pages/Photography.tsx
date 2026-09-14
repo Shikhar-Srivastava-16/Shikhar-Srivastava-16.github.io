@@ -9,8 +9,7 @@ export default function Photography() {
         <h1 className="section-title">Photographs</h1>
         <p className="photography__lede">
           Mostly wildlife and birding across North-Western India and the
-          Himalaya, with the occasional piece of architecture that refused to
-          be walked past.
+          Himalayas, with the occasional piece of architecture.
         </p>
 
         <div className="photo-grid">

@@ -42,7 +42,7 @@ export const projects: Project[] = [
     slug: "enigma",
     name: "Enigma Machine Emulator",
     description:
-      "Digital twin of the Enigma Machine, written in C. Supports both Encryption and Descryption of strings via the command line.",
+      "Digital twin of the Enigma Machine, written in C. Supports both Encryption and Decryption of strings via the command line.",
     image: "/images/projects/placeholder-1.svg",
     tags: ["C", "Encryption Systems", "Low-Level Programming"],
     gitlink: "https://github.com/Shikhar-Srivastava-16/game-of-life-hs",

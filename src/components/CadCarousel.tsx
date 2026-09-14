@@ -12,6 +12,7 @@ export default function CadCarousel({ images, name }: CadCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: multi,
     watchDrag: multi,
+    align: "center",
   });
   const [selected, setSelected] = useState(0);
 
@@ -48,7 +49,12 @@ export default function CadCarousel({ images, name }: CadCarouselProps) {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {images.map((src, i) => (
-            <div className="embla__slide" key={`${src}-${i}`}>
+            <div
+              className={`embla__slide${i === selected ? " is-active" : ""}${
+                multi ? "" : " is-single"
+              }`}
+              key={`${src}-${i}`}
+            >
               <img
                 src={src}
                 alt={`${name} view ${i + 1}`}

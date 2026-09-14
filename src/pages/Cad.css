@@ -34,7 +34,6 @@
 
 .cad-card__media {
   background: var(--color-bg-overlay);
-  aspect-ratio: 4 / 3;
   position: relative;
   overflow: hidden;
 }

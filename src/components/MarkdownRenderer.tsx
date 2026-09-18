@@ -111,12 +111,14 @@ function ArticleImage({
   }
 
   return (
-    <img
-      src={src}
-      alt={alt ?? ""}
-      className="mb-6 w-full rounded-md"
-      {...props}
-    />
+    <div style={{display: "flex", justifyContent: "center"}}>
+      <img
+        src={src}
+        alt={alt ?? ""}
+        className="mb-6 rounded-md"
+        {...props}
+      />
+    </div>
   );
 }
 

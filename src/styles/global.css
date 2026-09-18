@@ -56,7 +56,7 @@ body {
 
 @font-face {
   font-family: 'JetBrainsMono Nerd Font';
-  src: url('fonts/0xProtoNerdFontMono-Italic.ttf') format('truetype');  
+  src: url('/fonts/0xProtoNerdFontMono-Italic.ttf') format('truetype');  
 }
 
 h1, h2, h3, h4 {

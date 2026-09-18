@@ -3,16 +3,7 @@
 
   Every colour, type size, spacing unit and motion timing used anywhere in this site is declared here to ensure unified design language.
 
-  Palette reference (traditional Japanese colour names):
-    sumi     — ink black, the ground the whole page sits on
-    washi    — paper white, used sparingly for text/light
-    shu      — vermillion, the hanko-stamp accent / signature red
-    ai       — indigo, secondary accent for links & data
-    kin      — muted gold, rare highlight for dividers/quotes
-  ============================================================
-*/
-
-/* colours are decided in the following way:
+colours are decided in the following way:
  - C1: purple
       shades of purple are used in the every context, including highlights, buttons, links, background, highlights
  - C2: slate

@@ -6,7 +6,7 @@ export default function Photography() {
     <section className="page photography">
       <div className="container">
         <span className="eyebrow">Photography</span>
-        <h1 className="section-title">Photographs</h1>
+        <h1 className="section-title">The Photos I capture!</h1>
         <p className="photography__lede">
           Mostly wildlife and birding across North-Western India and the
           Himalayas, with the occasional piece of architecture.

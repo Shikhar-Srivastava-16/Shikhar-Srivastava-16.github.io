@@ -37,6 +37,18 @@ export const projects: Project[] = [
     status: 1,
     placecard: false,
   },
+  
+  {
+    slug: "enigma",
+    name: "Enigma Machine Emulator",
+    description:
+      "Agentic AI framework, written in Rust, written to provide functionality for building AI Agent Harnesses. Supports multiple LLMs from different providers, using a monomorphic JSON control system. Contains logic that allows for tool-calling and context management. Tested with RAG, Tools and History chat, and is now known to provide a 2-5 times speed bump from older frameworks like LangChain with current functionality.",
+    image: "/images/projects/placeholder-1.svg",
+    tags: ["Frameworks", "Rust", "Low-Level Programming", "Agentic AI", "Monomorphic Systems"],
+    gitlink: "https://github.com/Shikhar-Srivastava-16/agentic-harness-rs.git",
+    status: 0,
+    placecard: false,
+  },
 
   {
     slug: "enigma",

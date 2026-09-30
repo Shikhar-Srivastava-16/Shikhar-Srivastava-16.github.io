@@ -19,7 +19,6 @@ export default function Cad() {
           if (items.length === 0) return null;
           return (
             <div className="cad__category" key={category}>
-              <h2 className="cad__category-title">{category}</h2>
               <div className="cad-grid">
                 {items.map((project) => (
                   <article className="cad-card card" key={project.slug}>

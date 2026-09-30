@@ -23,11 +23,15 @@ export default function Home() {
                         <p className="hero__lede">
                             I am an M.Sci (hons) Computer Science student at the University of St Andrews. During my
                             Masters, I have researched several kinds of bleeding-edge computing and software. 
-                            I have a special interest in the application of new computing research in the field.
+                        </p>
+                        <p className="hero__lede">
+                            I have a special interest in the application of new computing research onto fieldwork and new applications.
                             My practical experience includes projects that use VR, Functional Programming, CAD, and Aritifical Intelligence.
-                            <br/>
+                        </p>
+                        <p className="hero__lede">
                             In my free time, I sing, I dance, and I travel the world and capture it through a camera lens.
-                            <br/>
+                        </p>
+                        <p className="hero__lede">
                             Read all about my exploits in my Blog, whether you want an insight into my technical tomfoolery,
                             or if you want to learn about what makes my life interesting.
                         </p>

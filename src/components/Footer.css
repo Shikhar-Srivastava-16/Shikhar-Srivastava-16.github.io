@@ -35,6 +35,8 @@
   color: var(--color-text-muted);
   transition: color var(--duration-fast) var(--ease-standard);
 }
+/* TODO: figure out why not applied to the hover socials links */
+.a:hover { color: var(--color-shu); }
 
 .icon {
   font-family: var(--font-mono);
@@ -42,8 +44,6 @@
   position: relative;
   top: 10%;
 }
-
-a:hover { color: var(--color-shu); }
 
 @media (max-width: 600px) {
   .footer__socials { margin-left: 0; }

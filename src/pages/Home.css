@@ -96,11 +96,6 @@
 
 .section-nav__card:hover .section-nav__arrow {
   transform: translateX(4px);
-  color: var(--color-shu);
-}
-
-.section-nav__card:hover .section-nav__teaser {
-  color: var(--color-shu);
 }
 
 @media (max-width: 640px) {

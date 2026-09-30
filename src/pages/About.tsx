@@ -15,14 +15,14 @@ export default function About() {
                     /> */}
                     <div className="about__bio">
                         <p className="about__role">Computer Science Student</p>
-                        <p className="about__lede">
+                        <p className="about__personal">
                             I write code, I take photographs around the world and I write (obsessively). Most days, you'll find me exploring how I can use discrete mathematics to write better production applications.
                         </p>
                         <p className="about__personal">
-                            Six years ago, I wrote my first program. Five years ago, I started learning Computer Science. Three Years ago, I started a Computer Science degree at the University of St Andrews, which quickly turned into the best decision of my life. My time at the University has taught me how to apply the Theory of the subject to Software Engineering. As a result, I understand that Software Engineering is more than just writing programs. I also understand the value of having a theoretical background for this practical subject.
+                            Six years ago, I wrote my first program. Five years ago, I started learning Computer Science. Three Years ago, I started a Computer Science degree at the University of St Andrews, which quickly turned into the best decision of my life. My time at the University has taught me how to apply the theory of the subject to Software Engineering. As a result, I understand that Software Engineering is more than just writing programs. I also understand the value of having a theoretical background for this practical subject.
                         </p>
                         <p className="about__personal">
-                            I have spent the last few years trying to apply my knowledge of Computer Science to Software Engineering. To do this, I have worked in multiple research projects, as well as rewriting existing tech like Agentic AI and Operating Systems using new programming languages. This has always resulted in me learning a lot. Often, I have also been able to make better alternatives for existing software using newer, most recent technology. 
+                            I have spent the last few years trying to apply my knowledge of Computer Science to Software Engineering. I have worked in multiple research projects, as well as rewriting existing tech like Agentic AI and Operating Systems using new programming languages. That experience has helped me develop skills in engineering, and taught about working in production and research, and given me valuable insights into planning projects and development. Often, I have helped in finding or making better alternatives for existing software using new technology. 
                         </p>
                         <p className="about__personal">
                             When I don't have my nose buried in a book or my eyes fixed on a screen, you might find me travelling to strange places, looking for even stranger things. 
